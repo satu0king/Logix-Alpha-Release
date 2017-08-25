@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Logix Test Release</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/logixRelease.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="./index.html">Logix</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./simulator.html">Simulator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./examples.html">Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./features.html">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd3-nwTN9jgQtniuViziP439Nuv_84VywwiPYeH4spBl60CKg/viewform?usp=sf_link">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <br />
+    <br />
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h1 class="display-3 ">Logix Features</h1>
+                    <p>Design circuits quickly and easily with a modern and intuitive user interface with drag-and-drop, copy/paste, zoom and more. The main features have been listed below.</p>
+                    <p class="text-danger">THIS IS AN ALPHA TEST RELEASE. PLEASE AVOID DISTRIBUTING OR SHARING IN PUBLIC CIRCLES. Mainly released for testing within IIIT-Bangalore.</p>
+                    <!-- <p><a class="btn btn-dark btn-lg" href="#" role="button">Launch Simulator &raquo;</a></p> -->
+                </div>
+                <div class="col">
+                    <img src="./img/logixBanner.png" class="img-fluid img-thumbnail" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <style>
+    .feature{
+        border:1px solid rgba(0,0,0,.125);
+        padding:  1.25rem;
+        border-radius: 0.25em;
+    }
+
+    </style>
+    <div class="container">
+        <div class="row feature">
+                 <div class="col-9">
+                     <h4 class="card-title">Multi Bit Buses and components</h4>
+                     <p class="card-text">Logix supports multi bit wires, this means circuit design is easier,
+                          faster and uncluttered. To change the bitWidth of the circuit elements, Just select the circuit element and change the bitwidth value in the property menu.</p>
+                 </div>
+                 <div class="col">
+                     <img src="./img/bus.png" class="img-fluid img-thumbnail" alt="Responsive image">
+                 </div>
+        </div>
+        <br />
+        <div class="row feature">
+                 <div class="col">
+                     <h4 class="card-title">Sub circuits</h4>
+                     <p class="card-text">Create subcircuits once and use them repeatedly. This allows easier and more structured design. Future versions will allow importing of subcircuits from external sources. To use a subcircuit, simply create and design the subcircuit as a normal circuit and Label inputs and outputs. Then after that create another circuit within the same project and click circuit -> insert subcircuit and select the subcircuit.</p>
+                 </div>
+                 <div class="col-2">
+                     <img src="./img/halfAdder.png" class="img-fluid img-thumbnail" alt="Responsive image">
+                 </div>
+                 <div class="col-4">
+                     <img src="./img/fullAdder.png" class="img-fluid img-thumbnail" alt="Responsive image">
+                 </div>
+        </div>
+        <br />
+        <div class="row feature">
+                 <div class="col">
+                     <h4 class="card-title">Export High-Resolution Images</h4>
+                     <p class="card-text">Logix can export high resolution images in multiple formats including SVG.</p>
+                 </div>
+                 <div class="col-8">
+                     <img src="./img/Control Sequencer.png" class="img-fluid img-thumbnail" alt="Responsive image">
+                 </div>
+        </div>
+        <br />
+        <div class="row feature">
+                 <div class="col">
+                     <h4 class="card-title">Combinational Analysis</h4>
+                     <p class="card-text">Automatically generate circuit based on truth table data. This is great to create complex logic circuits and can be easily be made into a subcircuit.</p>
+                 </div>
+        </div>
+        <br />
+        <div class="row feature">
+                 <div class="col">
+                     <h4 class="card-title">Plotting and Debugger</h4>
+                     <p class="card-text">This feature is still under development. This will allow the user to set debug flags to see the Time Plot. The Debugger will allow the user to find logical mistakes in the design.</p>
+                 </div>
+        </div>
+        <br />
+        <div class="row feature">
+                 <div class="col">
+                     <h4 class="card-title">Embed in PowerPoint and Blogs</h4>
+                     <p class="card-text">Since Logix is built in HTML5, an iFrame can be generated for each project allowing the user to embed it almost anywhere.</p>
+                 </div>
+        </div>
+        <br />
+
+
+    </div>
+
+
+    <div class="container">
+        <hr>
+        <footer>
+            <p>&copy; Logix Team 2017</p>
+        </footer>
+    </div>
+
+    <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>
