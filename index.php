@@ -1,11 +1,12 @@
 <?php
-require "setup.php";
+
 function generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $randomString = substr(str_shuffle($characters),0,$length);
     return $randomString;
 }
 if(isset($_POST["data"])){
+    require "setup.php";
   $data=$_POST["data"];
   $projectName=$_POST["projectName"];
   $authorName=$_POST["authorName"];
@@ -20,6 +21,7 @@ if(isset($_POST["data"])){
   exit();
 }
 else if(isset($_POST["retrieve"])){
+    require "setup.php";
   $query="SELECT * FROM `logix-alpha-release` WHERE HASHKEY='$_POST[retrieve]'";
   $result = mysqli_query($myConnection,$query);
   $data=mysqli_fetch_assoc($result)["DATA"];
@@ -30,5 +32,5 @@ else if(isset($_POST["retrieve"])){
   exit();
 }
 else
-require("UX.html");
+require("index.html");
 ?>
