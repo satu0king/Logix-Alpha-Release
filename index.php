@@ -6,7 +6,9 @@ function generateRandomString($length = 10) {
     return $randomString;
 }
 if(isset($_POST["data"])){
+
     require "setup.php";
+
   $data=$_POST["data"];
   $projectName=$_POST["projectName"];
   $authorName=$_POST["authorName"];
@@ -21,7 +23,9 @@ if(isset($_POST["data"])){
   exit();
 }
 else if(isset($_POST["retrieve"])){
+
     require "setup.php";
+
   $query="SELECT * FROM `logix-alpha-release` WHERE HASHKEY='$_POST[retrieve]'";
   $result = mysqli_query($myConnection,$query);
   $data=mysqli_fetch_assoc($result)["DATA"];
