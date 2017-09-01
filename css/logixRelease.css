@@ -7,3 +7,9 @@ p{
     padding:  1.25rem;
     border-radius: 0.25em;
 }
+
+.gif-box{
+	position:absolute;
+	text-align: center;
+	top: 50%;
+}
